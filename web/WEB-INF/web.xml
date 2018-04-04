@@ -20,6 +20,10 @@
         <servlet-name>FinePaymentController</servlet-name>
         <servlet-class>com.aptechlibrary.controllers.FinePaymentController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>LoginController</servlet-name>
+        <servlet-class>com.aptechlibrary.controllers.LoginController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>SearchBookController</servlet-name>
         <url-pattern>/SearchBookController</url-pattern>
@@ -39,6 +43,10 @@
     <servlet-mapping>
         <servlet-name>FinePaymentController</servlet-name>
         <url-pattern>/FinePaymentController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginController</servlet-name>
+        <url-pattern>/LoginController</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

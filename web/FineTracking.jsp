@@ -20,6 +20,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     </head>
     <body>
+        <c:if test="${not empty sessionScope.username}">
         <%!
             boolean hasData = false;
             boolean hasStatus = false;
@@ -54,6 +55,7 @@
                         <li><a href="BookLoanController">Loan</a></li>
                         <li class="active"><a href="#">Fines</a></li>
                         <li><a href="NewBorrowerController">Borrowers</a></li>
+                        <li><a href="logout.jsp">Logout</a></li>
                     </ul>
                 </div>
             </div>
@@ -190,5 +192,6 @@
                 <% }%>
             </div>
         </div>
+        </c:if>
     </body>
 </html>
